@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-app.get('/:mob/:msg', (req,res) => {
+app.get('/+91:mob/:msg', (req,res) => {
  const mob = req.params.mob;
  const msg = req.params.msg;
  sendSMS(mob,msg);
